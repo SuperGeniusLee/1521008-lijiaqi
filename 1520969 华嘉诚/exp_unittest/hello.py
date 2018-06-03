@@ -1,13 +1,10 @@
 import os
-from datetime import datetime
 
 from flask import Flask, render_template
 from flask_bootstrap import Bootstrap
 from flask_moment import Moment
 from flask_sqlalchemy import SQLAlchemy
 from flask_wtf import FlaskForm
-from sqlalchemy import DateTime
-from sqlalchemy.orm import session
 from wtforms import StringField, SubmitField
 from wtforms.validators import DataRequired
 
@@ -29,7 +26,7 @@ class User(db.Model):
     id = db.Column(db.INT, primary_key = True)
     username = db.Column(db.String(64))
 
-    def __init__(self, username, age=20):
+    def __init__(self, username, age = 20):
         self.username = username
         self.age = age
 
@@ -51,10 +48,6 @@ def page_not_found(e):
 @app.errorhandler(500)
 def internal_server_error(e):
     return render_template('500.html'), 500
-
-
-
-
 
     return render_template('index.html', form = form, posts = posts)
 

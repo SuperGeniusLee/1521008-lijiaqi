@@ -9,9 +9,11 @@
         <h1>Hello,
             {% if current_user.is_authenticated() %}{{ current_user.username }}{% else %}Stranger{% endif %}!</h1>
     </div>
+    {% if current_user.is_authenticated() %}
     <div>
         {{ wtf.quick_form(form) }}
     </div>
+    {% endif %}
     <div class="post-tabs">
         {% include '_posts.html' %}
     </div>

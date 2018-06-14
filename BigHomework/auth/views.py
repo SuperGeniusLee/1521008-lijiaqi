@@ -2,7 +2,7 @@
 # -*-encoding: utf-8-*-
 
 # Created by GeniusV on 6/13/18.
-from auth import auth
+from . import auth
 from auth.forms import LoginForm, RegistrationForm
 from flask import flash
 from flask import render_template

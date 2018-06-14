@@ -34,19 +34,6 @@ def index():
     return render_template('index.html', form = form, posts = posts, pagination = pagination)
 
 
-@main.route('/user/<username>')
-def user(username):
-    # todo
-    return redirect(url_for("main.index"))
-
-
-@main.route('/edit/<int:id>', methods = ['GET', 'POST'])
-@login_required
-def edit(id):
-    # todo
-    return redirect(url_for("main.index"))
-
-
 @main.route('/post/<int:id>', methods = ['GET', 'POST'])
 def post(id):
     post = Post.query.get_or_404(id)

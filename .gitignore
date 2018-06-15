@@ -2,6 +2,9 @@
 ### Example user template template
 ### Example user template
 
+# temp ignore
+BigHomework/data.sqlite
+
 # IntelliJ project files
 .idea/
 *.DS_Store
@@ -11,6 +14,8 @@
 # IntelliJ project files
 .idea
 *.iml
+
+# db temp
 ### Python template
 # Byte-compiled / optimized / DLL files
 __pycache__/

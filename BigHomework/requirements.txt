@@ -15,7 +15,8 @@ Markdown==2.3.1
 MarkupSafe==0.18
 SQLAlchemy==0.9.9
 WTForms==1.0.5
-Werkzeug==0.10.4
+six==1.5.0
+werkzeug==0.14.1
 alembic==0.6.2
 bleach==1.4.0
 blinker==1.3

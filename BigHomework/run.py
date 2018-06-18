@@ -1,4 +1,4 @@
-from BigHomework import create_app, db
+from web import create_app, db
 
 app = create_app()
 

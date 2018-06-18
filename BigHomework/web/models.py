@@ -5,10 +5,10 @@
 from datetime import datetime
 
 import bleach
-from flask.ext.login import UserMixin, AnonymousUserMixin
-from BigHomework import db, login_manager
+from web import db, login_manager
+from flask.ext.login import AnonymousUserMixin, UserMixin
 from markdown import markdown
-from werkzeug.security import generate_password_hash, check_password_hash
+from werkzeug.security import check_password_hash, generate_password_hash
 
 
 class User(db.Model, UserMixin):

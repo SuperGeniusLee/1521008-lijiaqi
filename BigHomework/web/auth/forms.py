@@ -3,7 +3,7 @@
 
 # Created by GeniusV on 6/13/18.
 from flask.ext.wtf import Form
-from models import User
+from web.models import User
 from wtforms import StringField, PasswordField, BooleanField, SubmitField
 from wtforms.validators import Length, Regexp, EqualTo, ValidationError
 from wtforms.validators import Required

@@ -3,7 +3,7 @@
 
 # Created by GeniusV on 6/13/18.
 import math
-from BigHomework import db
+from web import db
 from flask import flash, jsonify
 from flask import g
 from flask import redirect
@@ -11,8 +11,8 @@ from flask import render_template
 from flask import request
 from flask import url_for
 from flask.ext.login import current_user, login_required
-from main.forms import PostForm, CommentForm
-from models import Post, Comment
+from web.main.forms import PostForm, CommentForm
+from web.models import Post, Comment
 
 from . import main
 

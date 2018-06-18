@@ -1,7 +1,7 @@
 import unittest
 
-from BigHomework import create_app, db
-from models import Post, User
+from web import create_app, db
+from web.models import Post, User
 
 
 class RunTestCase(unittest.TestCase):

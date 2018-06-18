@@ -3,14 +3,14 @@
 
 # Created by GeniusV on 6/13/18.
 from . import auth
-from auth.forms import LoginForm, RegistrationForm
+from web.auth.forms import LoginForm, RegistrationForm
 from flask import flash
 from flask import render_template
 from flask import request
 from flask import url_for
 from flask.ext.login import login_required, login_user, logout_user
-from models import User
-from BigHomework import db
+from web.models import User
+from web import db
 from werkzeug.utils import redirect
 
 

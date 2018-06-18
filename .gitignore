@@ -3,7 +3,7 @@
 ### Example user template
 
 # temp ignore
-BigHomework/data.sqlite
+BigHomework/web/data.sqlite
 
 # IntelliJ project files
 .idea/

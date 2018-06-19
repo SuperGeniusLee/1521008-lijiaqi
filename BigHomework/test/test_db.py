@@ -32,5 +32,8 @@ class RunTestCase(unittest.TestCase):
         print(a)
         print(a.items)
 
+if __name__ == '__main__':
+    unittest.main()
+
 
 

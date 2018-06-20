@@ -4,6 +4,7 @@
 
 # temp ignore
 BigHomework/web/data.sqlite
+BigHomework/data.sqlite
 
 # IntelliJ project files
 .idea/
